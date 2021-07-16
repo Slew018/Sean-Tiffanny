@@ -1,3 +1,8 @@
-Santa Claus 1234567890
-Howie Feltersnatch 6969696969
-Anita Cash 3443443443
+Name | Phone number
+---------------
+Santa Claus | 1234567890
+Howie Feltersnatch | 6969696969
+Anita Cash | 3443443443
+Hugh Janus | 5553675689
+Mike Oxmaul | 333-555-6666
+Amanda huggankiss | 5556664444
