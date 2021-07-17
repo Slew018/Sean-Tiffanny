@@ -1,20 +1,20 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ReadingWriting {
     //for reading/writing to files
 // from curriculum read the contents of a file // created a get all method with our file path.
-    public static boolean getAll() throws IOException {
+
+    public static List<String> getAll() throws IOException {
         Path filePath = Paths.get("src", "contacts.txt");
-        List<String> file = Files.readAllLines(filePath);
+        return Files.readAllLines(filePath);
+    }
+    public static boolean printAllContacts() throws IOException {
+        List<String> file = getAll();
         for (int i = 0; i < file.size(); i++) {
             System.out.println(file.get(i));
         }
@@ -38,5 +38,22 @@ public class ReadingWriting {
                 StandardOpenOption.APPEND //By using StandardOpenOption.APPEND, we are able to add lines to the existing file(contacts.txt), instead of overwriting its contents. // adds to arraylist
         );
         return false;
+    }
+
+    public static String searchByName() throws IOException {
+
+        List<String> file = getAll();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter name");
+        String usersSearchText = scanner.nextLine();
+
+        for (String contact : file) {
+            if (contact.toLowerCase().contains(usersSearchText.toLowerCase())) {
+
+                return contact;
+            }
+        }
+        return "Contact not found";
     }
 }
