@@ -1,10 +1,11 @@
+Name | Phone number
 ---------------
 Anita Cash | 3443443443
-Howie Feltersnatch | 6969696969
+Howie Felterup | 6969696969
 Hugh Janus | 5553675689
 Mike Oxmaul | 333-555-6666
-Name | Phone number
 Walter white | 123456789
 Chloe Dristall | 345678912
 Jimmy Saul | (234) 567-891
 rory compter | (345) 678-9013
+lou sassol | (555) 654-5454
