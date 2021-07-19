@@ -32,7 +32,7 @@ public class ReadingWriting {
         String formattedPhoneNumber = "";
         //found solution regex on the interweb
         while(phoneNumber.length() != 10) {
-            System.out.println("Enter your 9 digit phone number and don't put dashes");
+            System.out.println("Enter your 10 digit phone number and don't put dashes");
             phoneNumber = scan.nextLine();
             formattedPhoneNumber = phoneNumber.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
             System.out.println(formattedPhoneNumber);
