@@ -16,7 +16,7 @@ public class ReadingWriting {
     public static boolean printAllContacts() throws IOException {
         List<String> file = getAllContacts();
         for (int i = 0; i < file.size(); i++) {
-            System.out.println(file.get(i));
+            System.out.println(file.get(i)); // string list holding any contacts from getallcontacts method. looping through it for every contact until you reach the end of your contacts
         }
         return false;
     }
@@ -34,11 +34,11 @@ public class ReadingWriting {
         while(phoneNumber.length() != 10) {
             System.out.println("Enter your 10 digit phone number and don't put dashes");
             phoneNumber = scan.nextLine();
-            formattedPhoneNumber = phoneNumber.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
+            formattedPhoneNumber = phoneNumber.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3"); //bonus
             System.out.println(formattedPhoneNumber);
         }
 
-        //New object that sets contact information equal
+        //New object that sets contact information equal to information input
         Contacts newContact = new Contacts(firstName, lastName, formattedPhoneNumber);
         // from curriculum add a line to an existing file
         Files.write(
@@ -49,16 +49,16 @@ public class ReadingWriting {
         return  "Contact " + firstName + " " + lastName + " Created!";
     }
 
-    public static String searchByName() throws IOException {
+    public static String searchByName() throws IOException { // sean takes over
 
-        List<String> file = getAllContacts();
+        List<String> file = getAllContacts(); // creating variable called file , assigning it to the result of getAllContacts, so when you use file it will give you all contacts
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter name");
         String usersSearchText = scanner.nextLine();
 
         //intellij told me to do an enhanced for loop
-        for (String contact : file) {
+        for (String contact : file) { //enhanced for loop string contact using the file which is all contacts , creating each line as a contact, taking 1 individual contact and checking to see if it matches the user input.
             if (contact.toLowerCase().contains(usersSearchText.toLowerCase())) {
                 return contact;
             }
