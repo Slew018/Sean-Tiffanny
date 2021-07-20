@@ -1,11 +1,7 @@
 Name | Phone number
 ---------------
-Anita Cash | 3443443443
-Howie Felterup | 6969696969
-Hugh Janus | 5553675689
-Mike Oxmaul | 333-555-6666
-Walter white | 123456789
-Chloe Dristall | 345678912
 Jimmy Saul | (234) 567-891
-rory compter | (345) 678-9013
-lou sassol | (555) 654-5454
+Rory Compter | (345) 678-9013
+Drake | (416) 808-6666
+
+
