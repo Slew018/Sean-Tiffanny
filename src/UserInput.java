@@ -13,7 +13,7 @@ public class UserInput   {
             int userChoice = scan.nextInt();
 
             if (userChoice == 1) {
-                ReadingWriting.printAllContacts();
+                ReadingWriting.printAllContacts(); // took out sout to remove false from coming on the console
             } else if (userChoice == 2) {
                 System.out.println(ReadingWriting.createNew());
             } else if (userChoice == 3) {
